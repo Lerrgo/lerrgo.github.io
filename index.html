@@ -220,23 +220,20 @@
     </footer>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Obtener todos los elementos que deben ser animados
             const animatableElements = document.querySelectorAll('.animate-slide-in-left, .animate-slide-in-right, .animate-float-in-bottom');
     
-            // Crear una instancia de IntersectionObserver
             const observer = new IntersectionObserver(entries => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
-                        observer.unobserve(entry.target); // Deja de observar el elemento una vez que ha sido visible
+                        observer.unobserve(entry.target);
                     }
                 });
             }, { threshold: 0.1 });
     
-            // Observar cada elemento animable
             animatableElements.forEach(element => {
                 observer.observe(element);
-                element.classList.add('hidden'); // Ocultar elementos inicialmente
+                element.classList.add('hidden');
             });
         });
     </script>
