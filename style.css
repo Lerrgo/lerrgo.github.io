@@ -372,7 +372,6 @@ span {
     background: #000;
     border-radius: 3% 3% 0.5% 0.5% / 5%;
     margin: 0 auto;
-    /* for aspect ratio */
     position: relative;
     width: 80%;
 }
@@ -407,7 +406,6 @@ span {
 }
   
 .base {
-    /* for aspect ratio */
     position: relative;
     width: 100%;
 }
@@ -415,9 +413,7 @@ span {
 .base:before {
     content: "";
     display: block;
-    /* for aspect ratio ~33:1000*/
     padding-top: 3.3%;
-    /* stylin */
     background: linear-gradient(#eaeced, #edeef0 55%, #fff 55%, #8a8b8f 56%, #999ba0 61%, #4B4B4F 84%, #262627 89%, rgba(0, 0, 0, .01) 98%);
     border-radius: 0 0 10% 10%/ 0 0 50% 50%;
 }
@@ -439,7 +435,6 @@ span {
     margin-right: auto;
     margin-top: -3.5%;
     z-index: 2;
-    /* for aspect ratio */
     position: relative;
     width: 14%;
 }
@@ -447,16 +442,12 @@ span {
 .notch:before {
     content: "";
     display: block;
-    /* for aspect ratio ~1:10 */
     padding-top: 10%;
 }
   
 #default {
     color: #777;
 }
-  
-  /* Screenshot Hover Scroll Additions
-  -------------------------------------------------------------- */
   
 .macbook .viewport {
     transition: background-position 3s ease;
@@ -479,7 +470,6 @@ span {
     right: 0;
     top: 0;
   }
-/**/
 
 
 footer {
@@ -585,7 +575,6 @@ footer {
 }
 
 
-/* Animaciones */
 @keyframes slideInFromLeft {
     from {
         transform: translateX(-100%);
@@ -619,7 +608,6 @@ footer {
     }
 }
 
-/* Clases de animación */
 .animate-slide-in-left {
     opacity: 0;
     transition: opacity 1s;
@@ -647,7 +635,6 @@ footer {
     animation: floatInFromBottom 1s forwards;
 }
 
-/* Clases ocultas */
 .hidden {
     opacity: 0;
 }
