@@ -6,7 +6,6 @@
     -ms-overflow-style: none;
     cursor: default;
     user-select: none;
-    /*#2B66FF*/
 }
 
 *::-webkit-scrollbar {
@@ -271,7 +270,7 @@ span {
 }
 
 .esquina2 {
-    bottom: 5px;
+    bottom: -5px;
     right: -5px;
 }
 
