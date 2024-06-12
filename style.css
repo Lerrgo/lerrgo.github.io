@@ -503,6 +503,27 @@ footer {
     margin: 0;
 }
 
+.visit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.visit a {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    transition: .2s ease;
+    box-shadow: 0 4px #222;
+}
+
+.visit a:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px #222;
+}
 
 @media (max-width: 900px) {
     .banner {
