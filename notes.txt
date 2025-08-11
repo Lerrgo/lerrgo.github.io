@@ -1,0 +1,66 @@
+ESTRUCTURA
+
+Nav
+    Inicio
+    Proyectos
+    CV
+    Certificados
+    Testimonios
+    Contacto
+    Modo claro / oscuro
+    Idioma
+
+Inicio
+    Hero
+    Foto
+    Introduction
+    Download CV
+    Proyectos destacados
+    Hailidades
+        Programación (Foto de herramientas)
+        Análisis (Foto de herramientas)
+        Softskills (enlace a videos)
+    Testimonios
+    Footer
+
+Proyectos
+    Todos los Proyectos 
+        Foto
+        Titulo
+        Etiquetas
+        Skills
+        Descripcion
+
+CV
+    CV escrito
+    Boton de descarga ambos idiomas
+
+Certificados
+    Foto
+    Titulo
+    Etiquetas
+    Skills
+    Descripcion
+
+Testimonios
+    Foto
+    Nombre
+    LinkedIn
+    Testimonios
+
+Contacto
+    Foto en grande
+    Informacion de contacto
+
+Footer
+    Informacion de contacto
+        Correo
+        LinkedIn
+
+
+
+Extras:
+    Botón de Go to the Top
+    Dos idiomas
+    Fácil de actualizar
+    Claro/oscuro
