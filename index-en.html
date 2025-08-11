@@ -3,9 +3,301 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luis Rivera - EN</title>
+    <title>Luis Rivera - ES</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/layouts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+<header>
+    <section class="layout-15-70-15">
+        <div></div>
+        <!--Menú desktop-->
+        <nav class="desktop-menu">
+            <a href="./index-en.html" id="nav-active">Inicio</a>
+            <a href="./proyectos-en.html">Proyectos</a>
+            <a href="./curriculum-en.html">Curriculum Vitae</a>
+            <a href="./certificados-en.html">Certificados</a>
+            <a href="./testimonios-en.html">Testimonios</a>
+            <div class="switches">
+                <div id="theme">
+                    <label class="theme_switch">
+                        <input type="checkbox">
+                        <span class="theme_slider"></span>
+                    </label>
+                </div>
+                <div id="language">
+                    <a href="./index.html" class="lang-toggle-en"><span>EN</span></a>
+                </div>
+            </div>
+        </nav>
+        <!-- Botón Hamburguesa (solo móvil) -->
+        <div class="hamburger-wrapper">
+            <div class="hamburguer_menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PANEL LATERAL (MENÚ MÓVIL) -->
+    <div class="off_screen_menu">
+        <div class="mobile-links">
+            <a href="./index-en.html" id="nav-active">Inicio</a>
+            <a href="./proyectos-en.html">Proyectos</a>
+            <a href="./curriculum-en.html">Curriculum Vitae</a>
+            <a href="./certificados-en.html">Certificados</a>
+            <a href="./testimonios-en.html">Testimonios</a>
+        </div>
+        <!-- Idioma y tema abajo -->
+        <div class="bottom">
+            <div id="theme_movil">
+                <label class="theme_switch_movil">
+                    <input type="checkbox">
+                    <span class="theme_slider"></span>
+                </label>
+            </div>
+            <div id="language_movil">
+                <a href="./index.html" class="lang-toggle-en"><span>EN</span></a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <main>
+        <section class="layout-15-70-15" id="hero">
+            <div></div>
+            <div class="layout-60-40 hero-inner">
+                <div class="hero-content">
+                    <h1>LUIS RIVERA</h1>
+                    <h2>Analista de datos y<br>desarrollador web</h2>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quos quae libero cumque repellat, tempora veniam cupiditate fuga porro modi deleniti sapiente sed ipsa voluptas accusamus deserunt velit! Impedit, atque.</h3>
+                    <section class="hero-buttons">
+                        <a href="./docs/cv-en.pdf" target="_blank" download class="primary-button">Descargar CV</a>
+                        <a href="mailto:lerrgo@outlook.com" target="_blank" class="primary-button-icon">
+                            <img src="./images/icon-mail.png" alt="">
+                        </a>
+                        <a href="https://www.linkedin.com/in/luis-eduardo-rivera-rodriguez" target="_blank" class="primary-button-icon">
+                            <img src="./images/icon-linkedin.png" alt="">
+                        </a>
+                    </section>
+                </div>
+                <div class="hero-img-cont">
+                    <img src="./images/Luis Rivera.png" alt="" class="hero-img">
+                </div>
+            </div>
+            <div></div>
+        </section>
+        <section class="layout-15-70-15 content">
+            <div></div>
+            <div class="content-inner">
+                <div class="br-9"></div>
+                <div class="layout-60-40">
+                    <div>
+                        <h1>Resumen</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa perspiciatis maiores vitae est consectetur quo, animi ipsam quae culpa voluptatibus accusantium adipisci cum repudiandae officiis accusamus corrupti, aliquid magni saepe expedita doloribus possimus? Eum voluptas labore blanditiis est error expedita culpa, veniam, harum facilis cupiditate omnis corrupti quaerat esse maiores explicabo suscipit reiciendis tempora sunt amet facere rem, quo nostrum debitis nisi? Quaerat nisi harum quibusdam exercitationem aut soluta facilis, vel similique dolorem, eaque ipsam necessitatibus atque eligendi perferendis dignissimos, fugit reiciendis maiores provident recusandae unde eum voluptates dolorum maxime molestias. Nisi officia voluptatem iusto suscipit excepturi? Mollitia, nesciunt odio.</p>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="br-9"></div>
+                <div class="projects-cont">
+                    <h1>Proyectos Destacados</h1>
+                    <section class="projects">
+                        <!--Project 1-->
+                        <div id="project1" class="project">
+                            <img src="./images/ph.png" class="project-img" alt="">
+                            <div class="br-3"></div>
+                            <h3 class="project-title">Proyecto 1</h3>
+                            <div class="br-1"></div>
+                            <div class="tags">
+                                <p class="tag">#Programación</p>
+                                <p class="tag">#Análisis</p>
+                            </div>
+                            <div class="br-1"></div>
+                            <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia rerum aliquam quisquam ducimus praesentium, perspiciatis tenetur. Quasi sit inventore earum.</p>
+                            <div class="br-3"></div>
+                            <div class="project-button">
+                                <a href="" class="primary-button mini">Ver proyecto</a>
+                            </div>
+                        </div><!--Project 2-->
+                        <div id="project2" class="project">
+                            <img src="./images/ph.png" class="project-img" alt="">
+                            <div class="br-3"></div>
+                            <h3 class="project-title">Proyecto 1</h3>
+                            <div class="br-1"></div>
+                            <div class="tags">
+                                <p class="tag">#Programación</p>
+                                <p class="tag">#Análisis</p>
+                            </div>
+                            <div class="br-1"></div>
+                            <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia rerum aliquam quisquam ducimus praesentium, perspiciatis tenetur. Quasi sit inventore earum.</p>
+                            <div class="br-3"></div>
+                            <div class="project-button">
+                                <a href="" class="primary-button mini">Ver proyecto</a>
+                            </div>
+                        </div><!--Project 3-->
+                        <div id="project3" class="project">
+                            <img src="./images/ph.png" class="project-img" alt="">
+                            <div class="br-3"></div>
+                            <h3 class="project-title">Proyecto 1</h3>
+                            <div class="br-1"></div>
+                            <div class="tags">
+                                <p class="tag">#Programación</p>
+                                <p class="tag">#Análisis</p>
+                            </div>
+                            <div class="br-1"></div>
+                            <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia rerum aliquam quisquam ducimus praesentium, perspiciatis tenetur. Quasi sit inventore earum.</p>
+                            <div class="br-3"></div>
+                            <div class="project-button">
+                                <a href="" class="primary-button mini">Ver proyecto</a>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="br-7"></div>
+                    <div class="more">
+                        <a href="./proyectos-en.html">Ver todos los proyectos -></a>
+                    </div>
+                </div>
+                <div class="br-9"></div>
+                <div class="skills-cont">
+                    <h1>Habilidades</h1>
+                    <div class="br-3"></div>
+                    <div class="layout-60-40">
+                        <section class="skills">
+                            <!--Botones-->
+                            <div class="skills-buttons">
+                                <button class="skill-tab active" data-target="softskills">Habilidades blandas</button>
+                                <button class="skill-tab" data-target="programming">Programación</button>
+                                <button class="skill-tab" data-target="analysis">Análisis</button>
+                            </div>
+                            <div class="br-3"></div>
+                            <!--Contenido-->
+                            <div class="skills-content">
+                                <!--Habilidades blandas-->
+                                <div id="softskills" class="skill-panel active">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet facilisis urna. Praesent ultricies eros sit amet nisi posuere, et facilisis odio gravida.</p>
+                                    <img src="./images/python.png" alt="Python logo">
+                                </div>
+                                <!--Programación-->
+                                <div id="programming" class="skill-panel">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, aliquid. Distinctio harum quam sapiente odit pariatur perferendis asperiores.</p>
+                                </div>
+                                <!--Análisis-->
+                                <div id="analysis" class="skill-panel">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra mi in odio convallis, at malesuada felis imperdiet.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="br-9"></div>
+                <div class="testimonios-cont">
+                    <h1>Testimonios</h1>
+                    <div class="br-7"></div>
+                    <div class="layout-60-40">
+                        <section class="testimonials">
+                            <!--Testimonio 1-->
+                            <div class="testimony">
+                                <div class="testimony-img">
+                                    <img src="./images/ph.png" alt="">
+                                </div>
+                                <div class="testimony-content">   
+                                    <h2 class="testimony-title">Nombre Persona</h2>
+                                    <div class="br-1"></div>
+                                    <h3 class="testimony-charge">Cargo de la persona</h3>
+                                    <div class="br-3"></div>
+                                    <p class="testimony-text">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus illo cumque fuga aperiam voluptate nesciunt cupiditate nobis repellendus sit, ratione ducimus repudiandae veritatis eos itaque dicta animi, corrupti neque a. Non odit ullam eius debitis nobis. Voluptatibus neque et veritatis.
+                                    </p>
+                                    <div class="br-3"></div>
+                                    <div class="project-button">
+                                        <a href="" class="primary-button-icon"><img src="./images/icon-linkedin.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="br-9"></div>
+                            <hr>
+                            <div class="br-9"></div><!--Testimonio 2-->
+                            <div class="testimony">
+                                <div class="testimony-img">
+                                    <img src="./images/ph.png" alt="">
+                                </div>
+                                <div class="testimony-content">   
+                                    <h2 class="testimony-title">Nombre Persona</h2>
+                                    <div class="br-1"></div>
+                                    <h3 class="testimony-charge">Cargo de la persona</h3>
+                                    <div class="br-3"></div>
+                                    <p class="testimony-text">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus illo cumque fuga aperiam voluptate nesciunt cupiditate nobis repellendus sit, ratione ducimus repudiandae veritatis eos itaque dicta animi, corrupti neque a. Non odit ullam eius debitis nobis. Voluptatibus neque et veritatis.
+                                    </p>
+                                    <div class="br-3"></div>
+                                    <div class="project-button">
+                                        <a href="" class="primary-button-icon"><img src="./images/icon-linkedin.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="br-9"></div>
+                            <hr>
+                            <div class="br-9"></div><!--Testimonio 3-->
+                            <div class="testimony">
+                                <div class="testimony-img">
+                                    <img src="./images/ph.png" alt="">
+                                </div>
+                                <div class="testimony-content">   
+                                    <h2 class="testimony-title">Nombre Persona</h2>
+                                    <div class="br-1"></div>
+                                    <h3 class="testimony-charge">Cargo de la persona</h3>
+                                    <div class="br-3"></div>
+                                    <p class="testimony-text">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus illo cumque fuga aperiam voluptate nesciunt cupiditate nobis repellendus sit, ratione ducimus repudiandae veritatis eos itaque dicta animi, corrupti neque a. Non odit ullam eius debitis nobis. Voluptatibus neque et veritatis.
+                                    </p>
+                                    <div class="br-3"></div>
+                                    <div class="project-button">
+                                        <a href="" class="primary-button-icon"><img src="./images/icon-linkedin.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="br-9"></div>
+                            <hr>
+                            <div class="br-7"></div>
+                            <div class="more">
+                                <a href="./testimonios-en.html">Ver todos los testimonios -></a>
+                            </div>
+                        </section>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div></div>
+        </section>
+        <div class="br-7"></div>
+        <div class="br-9"></div>
+        <footer class="layout-15-70-15">
+            <div></div>
+            <div class="footer">
+                <div class="footer-contact">
+                    <a href="mailto:lerrgo@outlook.com" class="footer-button">
+                        <div class="footer-icon"><img src="./images/icon-mail.png" alt=""></div>
+                        <p>lerrgo@outlook.com</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/luis-eduardo-rivera-rodriguez" class="footer-button">
+                        <div class="footer-icon"><img src="./images/icon-linkedin.png" alt=""></div>
+                        <p>Luis Rivera</p>
+                    </a>
+                </div>
+                <div class="footer-phrase">
+                    <h1>Esta es una<br>frase que<br>despues vere</h1>
+                </div>
+            </div>
+            <div></div>
+        </footer>
+    </main>
 </body>
+<script src="./functions/app.js"></script>
+<script src="./functions/theme.js"></script>
 </html>
