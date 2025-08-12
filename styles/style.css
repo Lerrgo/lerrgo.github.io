@@ -38,7 +38,6 @@ div {
     --lvl8: 3.75rem;
     --lvl9: 6.25rem;
     --lvl10: 10rem;
-    --lvl10: 15rem;
     /*Fuentes*/
     --paragraph: 1rem;
     --title1: 3rem;
@@ -81,10 +80,11 @@ header {
 }
 
 nav a {
-    color: var(--text1);
+    color: var(--text2);
 }
 
 #nav-active {
+    color: var(--text1);
     font-weight: bold;
     text-decoration: underline;
 }
@@ -402,12 +402,22 @@ h3 {
     box-shadow: #00000055 5px 5px 10px;
 }
 
+.project-img {
+    object-fit: cover;
+    box-shadow: 1px 1px 3px #00000033;
+}
+
 .project-description {
     font-size: var(--lvl3);
 }
 
 .tag {
     font-size: var(--tags);
+    color: var(--primary);
+}
+
+.tag-project {
+    font-size: var(--lvl4);
     color: var(--primary);
 }
 
@@ -476,11 +486,7 @@ h3 {
 
 /*Testimonials*/
 .testimony-img img {    
-    border: 4px solid var(--stroke);
-}
-
-.testimony-img img {    
-    border: 4px solid var(--stroke);
+    box-shadow: 10px 10px 20px #00000055;
 }
 
 .testimony-title {
@@ -490,6 +496,10 @@ h3 {
 .testimony-charge {
     font-weight: normal;
     color: var(--primary);
+}
+
+.testimony-text {
+    font-style: italic;
 }
 
 /*Footer*/
@@ -507,6 +517,58 @@ footer {
     color: var(--text1);
 }
 
+
+
+
+/*PROJECTS*/
+/*Mockup*/
+.page-project-img {
+    display: flex;
+    justify-content: center;
+}
+
+.img-wrapper {
+    /* background-image: linear-gradient(-45deg, var(--primary), var(--base2) 30%, var(--base2) 70%, var(--primary)); */
+    background-color: var(--base2);
+    padding: var(--lvl6);
+    border-radius: 15px;
+    box-shadow: 15px 15px 25px #00000055;
+    transform: perspective(1000px) rotateY(-25deg) rotateX(30deg);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.img-wrapper:hover {
+    transform: perspective(1000px) rotateY(0deg) rotateX(0deg) scale(1.02);
+    box-shadow: 5px 5px 10px #00000055;
+}
+
+.img-wrapper img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.page-project-img, .page-project-img * {
+    cursor: pointer;
+}
+
+/*Generals*/
+.page-project h1 {
+    margin-bottom: var(--lvl1);
+}
+.button-project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+
+
+
 /*Responsive*/
 @media (max-width: 900px) {
     :root {
@@ -521,7 +583,12 @@ footer {
         --lvl7: 1.5rem;
         --lvl8: 2rem;
         --lvl9: 3rem;
-        --lvl10: 5rem;
-        --lvl10: 10rem;
+        --lvl10: 8rem;
+    }
+    .img-wrapper {
+        max-width: 300px;
+    }
+    .img-wrapper:hover {
+        transform: perspective(1000px) rotateY(-25deg) rotateX(30deg);
     }
 }

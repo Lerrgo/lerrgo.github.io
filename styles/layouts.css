@@ -45,14 +45,16 @@ a {
 
 /*Hero*/
 #hero {
-    max-height: 80vh;
+    min-height: 600px;
+    max-height: 90vh;
     width: 100vw;
     top: 60px;
     z-index: -999;
 }
 
 #hero div {
-    max-height: 80vh;
+    min-height: 600px;
+    max-height: 90vh;
 }
 
 .hero-img-cont {
@@ -143,7 +145,7 @@ h1 {
 .testimony {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 40px;
 }
 
 .testimony-img {
@@ -210,6 +212,11 @@ footer {
 }
 
 /*Separators*/
+.br-10 {
+    width: 100%;
+    height: var(--lvl10);
+}
+
 .br-9 {
     width: 100%;
     height: var(--lvl9);
@@ -271,7 +278,13 @@ footer {
         height: 60px !important;
     }
     #hero {
+        min-height: auto;
         padding-top: var(--lvl9);
+        max-height: none;
+        height: auto;
+    }
+    #hero div {        
+        min-height: auto;
         max-height: none;
         height: auto;
     }
