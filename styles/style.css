@@ -447,6 +447,7 @@ h3 {
     min-width: 30%;
     border: none;
     font-size: var(--lvl4);
+    font-weight: bold;
     padding: var(--lvl4) var(--lvl4);
     color: var(--text1);
     border-radius: 10px;
