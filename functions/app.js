@@ -17,3 +17,24 @@ hamburguerMenu.addEventListener('click', () => {
     hamburguerMenu.classList.toggle('active');
     offScreenMenu.classList.toggle('active');
 });
+
+
+/*Certificados*/
+const overlay = document.getElementById('overlay');
+const overlayImg = document.getElementById('overlay-img');
+const clickableImgs = document.querySelectorAll('img.clickable');
+
+clickableImgs.forEach(img => {
+    img.addEventListener('click', () => {
+    overlayImg.src = img.src;
+    overlay.classList.add('active');
+    });
+});
+
+// Cierra al hacer clic en el fondo
+overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) {
+    overlay.classList.remove('active');
+    overlayImg.src = "";
+    }
+});

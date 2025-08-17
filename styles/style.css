@@ -342,7 +342,7 @@ input:checked + .theme_slider:before {
     text-decoration: none !important;
     background-image: linear-gradient(to bottom, var(--primary), var(--secondary));
     color: var(--white);
-    border-radius: 12px;
+    border-radius: 10px;
     box-shadow: #00000055 1px 1px 4px;
 }
 
@@ -360,7 +360,7 @@ input:checked + .theme_slider:before {
     text-decoration: none !important;
     background-image: linear-gradient(to bottom, var(--primary), var(--secondary));
     color: var(--white);
-    border-radius: 12px;
+    border-radius: 10px;
     box-shadow: #00000055 1px 1px 4px;
 }
 
@@ -369,7 +369,7 @@ input:checked + .theme_slider:before {
 }
 
 .mini {
-    border-radius: 10px !important;
+    border-radius: 7px !important;
     font-size: var(--lvl3);
     padding: 7px 10px !important;
 }
@@ -398,7 +398,7 @@ h3 {
 /*Projects*/
 .project {
     background-color: var(--base2);
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: #00000055 5px 5px 10px;
 }
 
@@ -440,6 +440,7 @@ h3 {
     background-color: var(--base2);
     border-radius: 10px;
     box-shadow: #00000055 3px 3px 7px;
+    min-height: 40px;
 }
 
 .skill-tab {
@@ -531,11 +532,11 @@ footer {
 .img-wrapper {
     /* background-image: linear-gradient(-45deg, var(--primary), var(--base2) 30%, var(--base2) 70%, var(--primary)); */
     background-color: var(--base2);
-    padding: var(--lvl6);
-    border-radius: 15px;
+    padding: var(--lvl3);
+    border-radius: 10px;
     box-shadow: 15px 15px 25px #00000055;
     transform: perspective(1000px) rotateY(-25deg) rotateX(30deg);
-    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .img-wrapper:hover {
@@ -547,7 +548,7 @@ footer {
     display: block;
     width: 100%;
     max-width: 400px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .page-project-img, .page-project-img * {
@@ -564,6 +565,74 @@ footer {
     justify-content: center;
     width: 100%;
 }
+
+
+
+
+/*CV*/
+.cv-header span, .cv-header span a {
+    font-size: var(--tags);
+    color: var(--text1);
+}
+
+ul {
+    color: var(--text2);
+    font-size: var(--paragraph);
+}
+
+
+
+
+/*CERTIFICADOS*/
+img.clickable {
+    cursor: pointer;
+    transition: transform ease-in-out .2s;
+}
+
+.project .clickable:hover {
+    transform: scale(1);
+}
+
+img.clickable:hover {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: #00000055;
+    backdrop-filter: blur(4px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.overlay.active {
+    display: flex;
+}
+
+.overlay img {
+    max-width: 80%;
+    max-height: 80%;
+    width: fit-content;
+    height: fit-content;
+    animation: fadeIn 0.3s ease;
+    border: var(--lvl3) solid var(--base2);
+    box-shadow: 5px 5px 10px #00000055;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.certificates-img {
+    border: var(--lvl3) solid var(--base2);
+    box-shadow: 5px 5px 10px #00000055;
+}
+
+
 
 
 
@@ -591,5 +660,8 @@ footer {
     }
     .img-wrapper:hover {
         transform: perspective(1000px) rotateY(-25deg) rotateX(30deg);
+    }
+    img.clickable:hover {
+        transform: scale(1);
     }
 }
