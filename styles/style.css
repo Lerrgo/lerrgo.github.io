@@ -617,6 +617,7 @@ img.clickable:hover {
     max-height: 80%;
     width: fit-content;
     height: fit-content;
+    object-fit: contain;
     animation: fadeIn 0.3s ease;
     border: var(--lvl3) solid var(--base2);
     box-shadow: 5px 5px 10px #00000055;
