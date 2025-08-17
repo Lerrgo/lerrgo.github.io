@@ -104,7 +104,7 @@ h1 {
     min-width: 300px;
     max-width: 25%;
     height: auto;
-    padding: 20px;
+    padding: var(--lvl4);
     margin-top: var(--lvl4);
 }
 
