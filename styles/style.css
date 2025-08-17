@@ -631,6 +631,8 @@ img.clickable:hover {
 .certificates-img {
     border: var(--lvl3) solid var(--base2);
     box-shadow: 5px 5px 10px #00000055;
+    object-fit: cover;
+    
 }
 
 
