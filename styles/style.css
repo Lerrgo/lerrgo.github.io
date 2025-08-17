@@ -615,9 +615,8 @@ img.clickable:hover {
 .overlay img {
     max-width: 80%;
     max-height: 80%;
-    width: fit-content;
-    height: fit-content;
-    object-fit: contain;
+    width: fit-content !important;
+    height: fit-content !important;
     animation: fadeIn 0.3s ease;
     border: var(--lvl3) solid var(--base2);
     box-shadow: 5px 5px 10px #00000055;
