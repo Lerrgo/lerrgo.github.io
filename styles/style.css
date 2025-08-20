@@ -398,7 +398,7 @@ h3 {
 /*Projects*/
 .project {
     background-color: var(--base2);
-    border-radius: 10px;
+    /* border-radius: 10px; */
     box-shadow: #00000055 5px 5px 10px;
 }
 
@@ -468,7 +468,7 @@ h3 {
 
 .skills-content {
     background-color: var(--base2);
-    border-radius: 10px;
+    /* border-radius: 10px; */
     padding: var(--lvl4);
     box-shadow: #00000055 5px 5px 10px;
 }
@@ -533,7 +533,7 @@ footer {
     /* background-image: linear-gradient(-45deg, var(--primary), var(--base2) 30%, var(--base2) 70%, var(--primary)); */
     background-color: var(--base2);
     padding: var(--lvl3);
-    border-radius: 10px;
+    /* border-radius: 10px; */
     box-shadow: 15px 15px 25px #00000055;
     transform: perspective(1000px) rotateY(-25deg) rotateX(30deg);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -548,7 +548,7 @@ footer {
     display: block;
     width: 100%;
     max-width: 400px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 
 .page-project-img, .page-project-img * {
@@ -559,6 +559,7 @@ footer {
 .page-project h1 {
     margin-bottom: var(--lvl1);
 }
+
 .button-project {
     display: flex;
     align-items: center;
@@ -566,6 +567,9 @@ footer {
     width: 100%;
 }
 
+h1 .tag {
+    font-size: var(--lvl4);
+}
 
 
 
@@ -589,7 +593,7 @@ img.clickable {
     transition: transform ease-in-out .2s;
 }
 
-.project .clickable:hover {
+.project .clickable:hover, .img-wrapper .clickable:hover {
     transform: scale(1);
 }
 
@@ -666,5 +670,8 @@ img.clickable:hover {
     }
     img.clickable:hover {
         transform: scale(1);
+    }
+    .tag-project {
+        font-size: var(--lvl3);
     }
 }
