@@ -164,6 +164,34 @@ h1 {
 
 
 
+/*Skills*/
+.skill-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 15%;
+    row-gap: var(--lvl4);
+}
+
+.skill-images img {
+    object-fit: contain;
+    flex: 0 0 5%;
+    max-width: 80px;
+}
+
+.skill-single-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.skill-single-image img {
+    width: 200px;
+}
+
+
 /*CV*/
 .cv-header {
     display: flex;

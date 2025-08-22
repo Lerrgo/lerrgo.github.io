@@ -307,9 +307,10 @@ input:checked + .theme_slider:before {
 }
 
 .hero-content h1 {
-    font-size: var(--title1);
+    font-size: var(--lvl8);
     color: var(--primary);
     text-shadow: var(--secondary) 2px 1px;
+    margin: 0;
 }
 
 .hero-content h2 {
@@ -469,8 +470,9 @@ h3 {
 .skills-content {
     background-color: var(--base2);
     /* border-radius: 10px; */
-    padding: var(--lvl4);
+    padding: var(--lvl6);
     box-shadow: #00000055 5px 5px 10px;
+    text-align: justify;
 }
 
 .skill-panel {
@@ -482,8 +484,7 @@ h3 {
 }
 
 .skill-panel img {
-    width: 100px;
-    margin-top: var(--lvl4);
+    margin-top: var(--lvl4); 
 }
 
 /*Testimonials*/
