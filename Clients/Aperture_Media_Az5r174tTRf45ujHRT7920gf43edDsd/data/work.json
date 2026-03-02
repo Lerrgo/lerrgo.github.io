@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Brand Alpha",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.",
+    "image": "https://picsum.photos/80?1"
+  },
+  {
+    "title": "Brand Beta",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.",
+    "image": "https://picsum.photos/80?2"
+  },
+  {
+    "title": "Brand Gamma",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.",
+    "image": "https://picsum.photos/80?3"
+  },
+  {
+    "title": "Brand Delta",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.",
+    "image": "https://picsum.photos/80?4"
+  },
+  {
+    "title": "Brand Epsilon",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.",
+    "image": "https://picsum.photos/80?5"
+  },
+  {
+    "title": "Brand Zeta",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.",
+    "image": "https://picsum.photos/80?6"
+  },
+  {
+    "title": "Brand Eta",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.",
+    "image": "https://picsum.photos/80?7"
+  },
+  {
+    "title": "Brand Theta",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.",
+    "image": "https://picsum.photos/80?8"
+  },
+  {
+    "title": "Brand Iota",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.",
+    "image": "https://picsum.photos/80?9"
+  },
+  {
+    "title": "Brand Kappa",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.",
+    "image": "https://picsum.photos/80?10"
+  }
+]

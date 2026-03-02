@@ -1,0 +1,36 @@
+.spacer-xxxl, .spacer-xxl, .spacer-xl, .spacer-l,
+.spacer-m, .spacer-sm, .spacer-xs {
+    width: 100%;
+}
+
+.spacer-xxxl {
+    height: var(--size-xxxl);
+}
+
+.spacer-xxl {
+    height: var(--size-xxl);
+}
+
+.spacer-xl {
+    height: var(--size-xl);
+}
+
+.spacer-l {
+    height: var(--size-l);
+}
+
+.spacer-m {
+    height: var(--size-m);
+}
+
+.spacer-sm {
+    height: var(--size-sm);
+}
+
+.spacer-s {
+    height: var(--size-s);
+}
+
+.spacer-xs {
+    height: var(--size-xs);
+}

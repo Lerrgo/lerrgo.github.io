@@ -1,0 +1,22 @@
+:root {
+    --primary: #ff887c;
+    --secondary: #b6325f;
+
+    --white: #FEFEFE;
+    --black: #111111;
+    
+    --clear-bg: #FFFAEB;
+    --dark-bg: #222;
+    
+    --stroke: #555;
+
+    --clear-text-1: #FFFAEB;
+    --clear-text-2: #E5E1D4;
+    --clear-text-3: #CCC8BC;
+    --clear-text-4: #B2AFA5;
+    --clear-text-5: #807D76;
+
+    --dark-text-1: #131313;
+    --dark-text-2: #1D1D1F;
+    --dark-text-3: #222;
+}

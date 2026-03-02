@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/*Font*/
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+/*Sizes*/
+h1 {
+    font-size: var(--size-xxl);
+    line-height: 150%;
+}
+
+h2 {
+    font-size: var(--size-xl);
+    line-height: 150%;
+}
+
+h3 {
+    font-size: var(--size-l);
+    line-height: 150%;
+}
+
+h4 {
+    font-size: 1.var(--size-m);
+    line-height: 150%;
+}
+
+p {
+    font-size: var(--size-sm);
+    line-height: 175%;
+}
+
+.text-small {
+    font-size: var(--size-s);  
+    line-height: 175%;  
+}
+
+.text-mini {
+    font-size: var(--size-xs);
+    line-height: 175%;   
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Colors*/
+.clear-text-1 {
+    color: var(--clear-text-1);
+}
+
+.clear-text-2 {
+    color: var(--clear-text-2);
+}
+
+.clear-text-3 {
+    color: var(--clear-text-3);
+}
+
+.clear-text-4 {
+    color: var(--clear-text-4);
+}
+
+.clear-text-5 {
+    color: var(--clear-text-5);
+}
+
+.dark-text-1 {
+    color: var(--dark-text-1);
+}
+
+.dark-text-2 {
+    color: var(--dark-text-2);
+}
+
+.dark-text-3 {
+    color: var(--dark-text-3);
+}
+
+.text-logo {
+    font-weight: bold;
+
+    background-image: linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.italic {
+    font-style: italic;
+}
