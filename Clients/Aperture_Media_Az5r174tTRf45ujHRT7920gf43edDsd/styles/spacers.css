@@ -34,3 +34,7 @@
 .spacer-xs {
     height: var(--size-xs);
 }
+
+.spacer-xxs {
+    height: var(--size-xxs);
+}

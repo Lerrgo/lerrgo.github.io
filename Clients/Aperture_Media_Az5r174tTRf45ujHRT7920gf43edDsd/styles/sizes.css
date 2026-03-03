@@ -7,4 +7,5 @@
     --size-sm:  clamp(1rem, 1.4vw, 1.2rem);
     --size-s:   clamp(0.8rem, 1.1vw, 1rem);
     --size-xs:  clamp(0.75rem, 0.9vw, 0.9rem);
+    --size-xxs:  clamp(0.7rem, 0.7vw, 0.6rem);
 }
