@@ -6,6 +6,7 @@ body {
 /*Hero*/
 #hero {
     min-height: 100vh;
+    height: fit-content;
     background-image: radial-gradient(var(--dark-text-2), var(--black));
 }
 
