@@ -8,22 +8,22 @@
 /*Sizes*/
 h1 {
     font-size: var(--size-xxl);
-    line-height: 150%;
+    line-height: 130%;
 }
 
 h2 {
     font-size: var(--size-xl);
-    line-height: 150%;
+    line-height: 130%;
 }
 
 h3 {
     font-size: var(--size-l);
-    line-height: 150%;
+    line-height: 130%;
 }
 
 h4 {
     font-size: 1.var(--size-m);
-    line-height: 150%;
+    line-height: 130%;
 }
 
 p {

@@ -186,7 +186,7 @@ body {
 }
 .c1-img {
   width: 100%;
-  max-width: 350px;
+  max-width: 256px;
   margin-top: 5rem;
 }
 
@@ -252,7 +252,7 @@ body {
 }
 .c2-img {
   width: 100%;
-  max-width: 350px;
+  max-width: 256px;
   margin-top: 10rem;
 }
 
@@ -679,7 +679,8 @@ footer div {
 }
 
 footer div img {
-  height: clamp(100px, 12vw, 150px);
+  height: clamp(60px, 6vw, 120px);
+  padding: 0 10px;
   background: linear-gradient(
         135deg,
         var(--primary),
