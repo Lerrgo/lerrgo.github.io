@@ -1,4 +1,7 @@
-/*General ackground*/
+/*General background*/
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: var(--clear-bg);
     overflow-x: hidden;
@@ -137,7 +140,7 @@ body {
 
 @media (max-width: 900px) {
   .hero-buttons {
-      flex-direction: column;
+      flex-direction: column-reverse;
       margin-top: 20px;
       gap: 20px;
       align-items: center;
