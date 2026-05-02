@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Arrow Puzzle Help</title>
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%2306070b'/%3E%3Cpath d='M18 39L32 25L46 39' fill='none' stroke='%23ebe7f2' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="help-page">
+    <div class="bg-lights" aria-hidden="true">
+        <span class="light light-1"></span>
+        <span class="light light-2"></span>
+        <span class="light light-3"></span>
+    </div>
+
+    <main class="help-content">
+        <header class="help-header">
+            <a class="back-link" href="index.html">← Back to game</a>
+
+            <h1>Arrow Puzzle Help</h1>
+
+            <p>
+                Make every tile point upward. In number mode, solve the board by making every tile show 1.
+            </p>
+        </header>
+
+        <section class="help-card">
+            <h2>Move rule</h2>
+
+            <p>
+                Tap a tile to rotate that tile and the surrounding tiles by one clockwise step.
+            </p>
+
+            <div class="rule-demo">
+                <div class="demo-grid">
+                    <span class="affected"></span>
+                    <span class="affected"></span>
+                    <span class="affected"></span>
+                    <span class="affected"></span>
+                    <span class="center"></span>
+                    <span class="affected"></span>
+                    <span class="affected"></span>
+                    <span class="affected"></span>
+                    <span class="affected"></span>
+                </div>
+
+                <div>
+                    <h3>Square boards</h3>
+                    <p>
+                        Easy and Normal use square boards. The selected tile and all surrounding cells are affected, including diagonal corners.
+                    </p>
+                </div>
+            </div>
+
+            <div class="rule-demo">
+                <div class="demo-hex">
+                    <span></span>
+                    <span class="affected"></span>
+                    <span class="affected"></span>
+                    <span class="affected"></span>
+                    <span class="center"></span>
+                    <span class="affected"></span>
+                    <span class="affected"></span>
+                    <span class="affected"></span>
+                    <span></span>
+                </div>
+
+                <div>
+                    <h3>Hex boards</h3>
+                    <p>
+                        Hard and Expert use a hexagonal board. Each tap affects the selected tile and the six neighboring cells around it.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="help-card">
+            <h2>Difficulty guide</h2>
+
+            <div class="difficulty-help-grid">
+                <article>
+                    <span>Easy</span>
+                    <p>Small square board. Good for learning the rotation pattern.</p>
+                </article>
+
+                <article>
+                    <span>Normal</span>
+                    <p>Larger square board. Work gradually from one area to another.</p>
+                </article>
+
+                <article>
+                    <span>Hard</span>
+                    <p>Hexagonal board with four possible arrow states.</p>
+                </article>
+
+                <article>
+                    <span>Expert</span>
+                    <p>Hexagonal board with six possible arrow states.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="help-card">
+            <h2>Solving approach</h2>
+
+            <ol class="steps-list">
+                <li>
+                    <strong>Focus on one region.</strong>
+                    Avoid tapping randomly across the whole board.
+                </li>
+
+                <li>
+                    <strong>Use number mode when needed.</strong>
+                    Number mode makes the states easier to track. The solved state is 1.
+                </li>
+
+                <li>
+                    <strong>Watch the edges.</strong>
+                    Edge tiles affect fewer neighbors, so they are useful for smaller corrections.
+                </li>
+
+                <li>
+                    <strong>For hex boards, think in rings.</strong>
+                    Correct the outer ring first, then move inward.
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
