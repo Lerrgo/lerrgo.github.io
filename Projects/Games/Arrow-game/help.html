@@ -21,117 +21,320 @@
         <span class="light light-3"></span>
     </div>
 
-    <main class="help-content">
-        <header class="help-header">
+    <main class="help-content help-content-wide">
+        <header class="help-header help-hero">
             <a class="back-link" href="index.html">← Back to game</a>
 
-            <h1>Arrow Puzzle Help</h1>
+            <div class="help-hero-grid">
+                <div class="help-hero-copy">
+                    <span class="help-kicker">Strategy guide</span>
+                    <h1>Arrow Puzzle Help</h1>
+                    <p>
+                        Your goal is to make every tile point upward. In number mode, the solved state is when every tile shows 1.
+                        Each tap rotates the selected tile and its neighboring tiles, so the best strategy is to solve the board in controlled rows instead of tapping randomly.
+                    </p>
 
-            <p>
-                Make every tile point upward. In number mode, solve the board by making every tile show 1.
-            </p>
+                    <div class="help-quick-points">
+                        <span>Use number mode for planning</span>
+                        <span>Solve rows from top to bottom</span>
+                        <span>Finish with the encoded bottom row</span>
+                    </div>
+                </div>
+
+                <div class="hero-puzzle-card" aria-hidden="true">
+                    <div class="hero-board">
+                        <span>↑</span>
+                        <span>→</span>
+                        <span>↓</span>
+                        <span>←</span>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>↑</span>
+                        <span>↑</span>
+                        <span>1</span>
+                        <span>1</span>
+                    </div>
+                    <div class="hero-caption">
+                        Tap with a plan. Track states. Solve one line at a time.
+                    </div>
+                </div>
+            </div>
         </header>
 
         <section class="help-card">
-            <h2>Move rule</h2>
+            <div class="section-title-row">
+                <div>
+                    <span class="help-kicker">Core rule</span>
+                    <h2>How a move works</h2>
+                </div>
+                <span class="mini-badge">Tap = rotate +1</span>
+            </div>
 
             <p>
-                Tap a tile to rotate that tile and the surrounding tiles by one clockwise step.
+                A tile does not rotate alone. When you tap one tile, that tile and the cells around it rotate one clockwise step.
+                This is why solving requires planning: every correction also changes nearby tiles.
             </p>
 
-            <div class="rule-demo">
-                <div class="demo-grid">
-                    <span class="affected"></span>
-                    <span class="affected"></span>
-                    <span class="affected"></span>
-                    <span class="affected"></span>
-                    <span class="center"></span>
-                    <span class="affected"></span>
-                    <span class="affected"></span>
-                    <span class="affected"></span>
-                    <span class="affected"></span>
+            <div class="help-rule-layout">
+                <div class="rule-demo visual-demo-card">
+                    <div class="demo-grid">
+                        <span class="affected"></span>
+                        <span class="affected"></span>
+                        <span class="affected"></span>
+                        <span class="affected"></span>
+                        <span class="center"></span>
+                        <span class="affected"></span>
+                        <span class="affected"></span>
+                        <span class="affected"></span>
+                        <span class="affected"></span>
+                    </div>
+
+                    <div>
+                        <h3>Square boards</h3>
+                        <p>
+                            Easy and Medium use square boards. The selected tile and all surrounding cells are affected, including diagonal corners.
+                        </p>
+                    </div>
                 </div>
 
-                <div>
-                    <h3>Square boards</h3>
-                    <p>
-                        Easy and Normal use square boards. The selected tile and all surrounding cells are affected, including diagonal corners.
-                    </p>
+                <div class="rule-demo visual-demo-card">
+                    <div class="demo-hex-compact">
+                        <div class="hex-row">
+                            <span class="affected"></span>
+                            <span class="affected"></span>
+                        </div>
+                        <div class="hex-row">
+                            <span class="affected"></span>
+                            <span class="center"></span>
+                            <span class="affected"></span>
+                        </div>
+                        <div class="hex-row">
+                            <span class="affected"></span>
+                            <span class="affected"></span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>Hex boards</h3>
+                        <p>
+                            Hard and Expert use a hexagonal board. Each tap affects the selected tile and the six neighboring cells around it.
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            <div class="rule-demo">
-                <div class="demo-hex">
-                    <span></span>
-                    <span class="affected"></span>
-                    <span class="affected"></span>
-                    <span class="affected"></span>
-                    <span class="center"></span>
-                    <span class="affected"></span>
-                    <span class="affected"></span>
-                    <span class="affected"></span>
-                    <span></span>
-                </div>
-
-                <div>
-                    <h3>Hex boards</h3>
-                    <p>
-                        Hard and Expert use a hexagonal board. Each tap affects the selected tile and the six neighboring cells around it.
-                    </p>
-                </div>
+            <div class="legend-row">
+                <span><i class="legend-dot center-dot"></i>Selected tile</span>
+                <span><i class="legend-dot affected-dot"></i>Affected neighbor</span>
+                <span><i class="legend-dot quiet-dot"></i>Unaffected tile</span>
             </div>
         </section>
 
         <section class="help-card">
-            <h2>Difficulty guide</h2>
+            <div class="section-title-row">
+                <div>
+                    <span class="help-kicker">Recommended flow</span>
+                    <h2>General solving idea</h2>
+                </div>
+            </div>
 
-            <div class="difficulty-help-grid">
+            <div class="flow-strip">
                 <article>
-                    <span>Easy</span>
-                    <p>Small square board. Good for learning the rotation pattern.</p>
+                    <strong>1</strong>
+                    <span>Start at the top</span>
+                    <p>Solve the upper row first so it becomes a stable reference.</p>
                 </article>
 
                 <article>
-                    <span>Normal</span>
-                    <p>Larger square board. Work gradually from one area to another.</p>
+                    <strong>2</strong>
+                    <span>Use the row below</span>
+                    <p>Tap tiles below the row you want to correct.</p>
+                </article>
+
+                <article>
+                    <strong>3</strong>
+                    <span>Control the bottom</span>
+                    <p>The final row cannot be solved the same way, so it must be encoded or matched.</p>
+                </article>
+
+                <article>
+                    <strong>4</strong>
+                    <span>Finish from the top</span>
+                    <p>Use the top rows to complete the last correction pattern.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="help-card">
+            <div class="section-title-row">
+                <div>
+                    <span class="help-kicker">Difficulty guide</span>
+                    <h2>Choose the method for your board</h2>
+                </div>
+            </div>
+
+            <div class="difficulty-help-grid difficulty-help-grid-plus">
+                <article>
+                    <span>Easy</span>
+                    <p>Small square board. Best for learning how row solving works.</p>
+                </article>
+
+                <article>
+                    <span>Medium</span>
+                    <p>Larger square board. Solve the top rows first, then use the first two rows to finish.</p>
                 </article>
 
                 <article>
                     <span>Hard</span>
-                    <p>Hexagonal board with four possible arrow states.</p>
+                    <p>Hexagonal board with four possible states. Requires propagation.</p>
                 </article>
 
                 <article>
                     <span>Expert</span>
-                    <p>Hexagonal board with six possible arrow states.</p>
+                    <p>Hexagonal board with six possible states. Uses the same hard strategy with more states.</p>
                 </article>
             </div>
         </section>
 
-        <section class="help-card">
-            <h2>Solving approach</h2>
+        <section class="help-card algorithm-section">
+            <div class="section-title-row">
+                <div>
+                    <span class="help-kicker">Algorithms</span>
+                    <h2>Step-by-step solving methods</h2>
+                </div>
+            </div>
 
-            <ol class="steps-list">
-                <li>
-                    <strong>Focus on one region.</strong>
-                    Avoid tapping randomly across the whole board.
-                </li>
+            <details class="algo-card" open>
+                <summary>
+                    <span>Easy</span>
+                    <b>Square board basics</b>
+                </summary>
 
-                <li>
-                    <strong>Use number mode when needed.</strong>
-                    Number mode makes the states easier to track. The solved state is 1.
-                </li>
+                <div class="algo-content">
+                    <p>
+                        The Easy strategy is based on solving a row, using the row below it to clean up the remaining tiles.
+                    </p>
 
-                <li>
-                    <strong>Watch the edges.</strong>
-                    Edge tiles affect fewer neighbors, so they are useful for smaller corrections.
-                </li>
+                    <ol class="steps-list enhanced-steps">
+                        <li>Solve the top row, then solve the middle row by tapping tiles below the row.</li>
+                        <li>Make the center tile of a row the same as one edge tile.</li>
+                        <li>Make the row all the same number.</li>
+                        <li>Solve the row.</li>
+                        <li>Solve the bottom row the same way, but use the middle row to control it.</li>
+                        <li>Using the top row, finish the solve.</li>
+                    </ol>
+                </div>
+            </details>
 
-                <li>
-                    <strong>For hex boards, think in rings.</strong>
-                    Correct the outer ring first, then move inward.
-                </li>
-            </ol>
+            <details class="algo-card" open>
+                <summary>
+                    <span>Medium</span>
+                    <b>Larger square board</b>
+                </summary>
+
+                <div class="algo-content">
+                    <p>
+                        The Medium strategy follows the same row logic, but it requires more control because there are more tiles in each row.
+                    </p>
+
+                    <ol class="steps-list enhanced-steps">
+                        <li>Solve the top three rows one after another, tapping tiles below the row.</li>
+                        <li>Make the center tile the same as its adjacent edge tile.</li>
+                        <li>Make the other center tile the same as its adjacent edge tile.</li>
+                        <li>Solve the left two tiles by pressing.</li>
+                        <li>Solve the right two tiles by pressing.</li>
+                        <li>Solve the bottom row the same way, but by using the bottom row itself.</li>
+                        <li>Using the first and second row, finish the solve.</li>
+                    </ol>
+
+                    <div class="tip-box">
+                        <strong>Tip:</strong>
+                        <span>
+                            When you solve during step 2, tap the first row the same number of times as the bottom row. You can then use row 2 to finish the solve.
+                        </span>
+                    </div>
+                </div>
+            </details>
+
+            <details class="algo-card" open>
+                <summary>
+                    <span>Propagation</span>
+                    <b>For Hard and Expert</b>
+                </summary>
+
+                <div class="algo-content">
+                    <p>
+                        Propagation means pushing corrections across the board in a controlled direction until the row becomes filled with 1s.
+                        This is the key technique for Hard and Expert boards.
+                    </p>
+
+                    <ol class="steps-list enhanced-steps">
+                        <li>Solve the top row by tapping tiles directly below the row.</li>
+                        <li>Solve the center tile.</li>
+                        <li>Solve the tile to the left of the center tile.</li>
+                        <li>Solve the tile two spaces to the left of the center tile.</li>
+                        <li>Solve the tile three spaces to the left of the center tile.</li>
+                        <li>Repeat the same process to the right of the center tile.</li>
+                        <li>The top row should now be entirely filled with 1s.</li>
+                        <li>Repeat step 1 for every row until the bottom row, but do not solve the bottom row yet.</li>
+                    </ol>
+
+                    <div class="verify-box">
+                        <h3>To verify there is no mistake</h3>
+                        <ul>
+                            <li>When you are done, your board will be symmetric.</li>
+                            <li>The two tiles adjacent to the bottom center tile will always be 1 or 4.</li>
+                        </ul>
+                    </div>
+                </div>
+            </details>
+
+            <details class="algo-card" open>
+                <summary>
+                    <span>Hard and Expert</span>
+                    <b>Final encoding method</b>
+                </summary>
+
+                <div class="algo-content">
+                    <p>
+                        Before using this method, read and practice propagation. Hard and Expert require you to encode the bottom row into the top row, then propagate again to finish.
+                    </p>
+
+                    <div class="label-diagram">
+                        <div>
+                            <span class="diagram-title">Top right cells</span>
+                            <div class="label-row">
+                                <b>a</b>
+                                <b>b</b>
+                                <b>c</b>
+                                <b>d</b>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="diagram-title">Bottom right cells</span>
+                            <div class="label-row label-row-gold">
+                                <b>A</b>
+                                <b>B</b>
+                                <b>C</b>
+                                <b>D</b>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ol class="steps-list enhanced-steps">
+                        <li>Propagate.</li>
+                        <li>Label the bottom right cells from left to right: A, B, C, D. Label the top right cells from left to right: a, b, c, d. You will tap the top row to encode the bottom row onto it.</li>
+                        <li>Tap a so that a is the same as C.</li>
+                        <li>Tap b and d the number of times you will need to solve C.</li>
+                        <li>Tap a the number of times you would need to solve D.</li>
+                        <li>If B + D is odd, tap c three times in Expert or once in Hard. Otherwise, skip this step.</li>
+                        <li>Propagate from the top once more to finish the solve.</li>
+                    </ol>
+                </div>
+            </details>
         </section>
     </main>
 
